@@ -13,7 +13,7 @@ public class HelloWorld {
    */
   public static void main(final String[] args) {
     HelloWorld hw = new HelloWorld();
-    System.out.println(hw.sayHello(null));
+    System.out.println(hw.sayHello("World"));
   }
 
   /**
