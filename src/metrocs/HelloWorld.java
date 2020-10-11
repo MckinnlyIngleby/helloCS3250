@@ -13,7 +13,7 @@ public class HelloWorld {
    */
   public static void main(final String[] args) {
     HelloWorld hw = new HelloWorld();
-    System.out.println(hw.sayHello("world"));
+    System.out.println(hw.sayHello(null));
   }
 
   /**
@@ -22,6 +22,9 @@ public class HelloWorld {
    * @return the constructed greeting.
    */
   public String sayHello(final String toWhom) {
+    if(toWhom == null){
+	return "Hello!";
+    }
     return "Hello " + toWhom;
   }
 }
